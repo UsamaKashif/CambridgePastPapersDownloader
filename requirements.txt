@@ -1,0 +1,6 @@
+The following Libraries are used
+
+Intall them before running the code
+
+1: requests
+2: BeautifulSoup

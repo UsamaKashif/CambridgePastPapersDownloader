@@ -179,9 +179,14 @@ def paperSelection(source,code):
 def createDir(code):
     import os
     dirName = code 
+    if not os.path.exists("Downloads"):
+        os.mkdir("Downloads")
+        print ('Directory Downloads created')
+    else:
+        print ('Directory Downloads already exists')
     try:
         # Create target Directory
-        os.mkdir(dirName)
+        os.mkdir(f'Downloads/{str(dirName)}')
         print("")
         print("Directory " , dirName ,  " Created.............................") 
     except FileExistsError:
@@ -193,7 +198,7 @@ def downloadPapers(papers,source,code):
     base_url = source.url
     semi_final_url = base_url + code.replace(" ", "%20")
     dirname = code
-    print (semi_final_url)
+    # print (semi_final_url)
 
     createDir(dirname) #create a folder
     print ("")
@@ -202,7 +207,7 @@ def downloadPapers(papers,source,code):
         final_url = semi_final_url +"/"+ p
         # print(final_url)
         r = requests.get(final_url)
-        with open(f'{dirname}/{p}' , "wb") as f:
+        with open(f'Downloads/{dirname}/{p}' , "wb") as f:
             f.write(r.content)
 
 

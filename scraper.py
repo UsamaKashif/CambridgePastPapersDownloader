@@ -239,7 +239,7 @@ def main():
             print ("Sorry No Papers Found")
             print ("Try Again...")
         else:
-            print("Past paers downloaded...")
+            print("Past papers downloaded...")
             print("ENJOY!!")
 
         loop = input("Do you want to download more: ").lower()

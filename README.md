@@ -22,6 +22,7 @@ The image below shows the demo of the application
 <hr>
   
 <b>If you are using the code make sure to download the libraries used. Check the requirements.txt file for the libraries used.</b>
+<br>
 To run the code type the following command in the CLI
 <br>
 <b>python scraper.py</b>

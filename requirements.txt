@@ -1,6 +1,2 @@
-The following Libraries are used
-
-Intall them before running the code
-
-1: requests
-2: BeautifulSoup
+requests==2.22.0
+beautifulsoup4==4.8.1
